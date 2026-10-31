@@ -1,0 +1,73 @@
+{
+  "build": {
+    "beforeDevCommand": "yarn dev",
+    "beforeBuildCommand": "yarn build",
+    "devPath": "http://localhost:1420",
+    "distDir": "../dist"
+  },
+  "package": {
+    "productName": "Habit Watcher",
+    "version": "0.0.6"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": true
+    },
+    "bundle": {
+      "active": true,
+      "category": "Productivity",
+      "copyright": "Copyright © 2022, n4ze3m",
+      "deb": {
+        "depends": []
+      },
+      "externalBin": [],
+      "icon": [
+        "icons/32x32.png",
+        "icons/128x128.png",
+        "icons/128x128@2x.png",
+        "icons/icon.icns",
+        "icons/icon.ico"
+      ],
+      "identifier": "site.n4ze3m.habit-watcher",
+      "longDescription": "Open source habit tracker for your desktop",
+      "macOS": {
+        "entitlements": null,
+        "exceptionDomain": "",
+        "frameworks": [],
+        "providerShortName": null,
+        "signingIdentity": null
+      },
+      "resources": [],
+      "shortDescription": "Open source habit tracker",
+      "targets": "all",
+      "windows": {
+        "certificateThumbprint": null,
+        "digestAlgorithm": "sha256",
+        "timestampUrl": ""
+      }
+    },
+    "security": {
+      "csp": "default-src blob: data: filesystem: ws: http: https: 'unsafe-eval' 'unsafe-inline'; frame-src 'self'; object-src 'self'"
+    },
+    "updater": {
+      "active": true,
+      "dialog": true,
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDNDQTdFNjhCNEI5QzYwMjIKUldRaVlKeExpK2FuUEpWcDVmWVdOc0JVUUZBaFY5aHIvM2k5aVFETFFidDJCbE1tVi9JOFRmSDYK",
+      "endpoints": [
+        "https://gist.github.com/n4ze3m/548edf07e2b4fea999830fd013cbbcf2/raw"
+      ]
+    },
+    "windows": [
+      {
+        "fullscreen": false,
+        "height": 600,
+        "resizable": true,
+        "title": "Habit Watcher",
+        "width": 800,
+        "minWidth": 500,
+        "minHeight": 500,
+        "center": true
+      }
+    ]
+  }
+}
